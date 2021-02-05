@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <title>Simega3</title>
+  </head>
+  <body>
+    <nav style="position: absolute; width: 100%; top: 0">
+      <ul
+        style="
+          display: flex;
+          flex-direction: row;
+          margin: auto;
+          justify-content: center;
+        "
+      >
+        <li class="nav-item hl-item">Inicio</li>
+        <li class="dropdown">
+          Servicios
+          <div class="dropdown-content">
+            <div style="font-size: 1em" class="nav-item hl-item">Submenu1</div>
+            <div style="font-size: 1em" class="nav-item hl-item">Submenu2</div>
+            <div style="font-size: 1em" class="nav-item hl-item">Submenu3</div>
+            <div style="font-size: 1em" class="nav-item hl-item">Submenu4</div>
+          </div>
+        </li>
+
+        <li class="nav-item hl-item">Acerca de</li>
+        <li class="nav-item hl-item">
+          <a href="./contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div style="color: #e0050b" class="slide-content">BCN</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-content">science</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <span style="color: #e0050b">BCN</span>science
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="hammerController.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          disabledClass: "hide-button",
+        },
+      });
+      changeScreen();
+    </script>
+  </body>
+</html>

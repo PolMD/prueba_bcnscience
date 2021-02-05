@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simega3</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="t1" class="title">
+        <h2>I need <span>mega energy</span></h2>
+      </div>
+      <div id="t2" class="title">
+        <h2>I need <span>mega concentration</span></h2>
+      </div>
+      <div id="t3" class="title">
+        <h2>I need <span>mega health</span></h2>
+      </div>
+      <div id="t4" class="title">
+        <h2>I need <span>Si</span>mega<sup>3</sup></h2>
+      </div>
+    </div>
+
+    <div id="footer" class="container footer">
+      <div
+        style="
+          color: #fff;
+          font-family: Arial, Helvetica, sans-serif;
+          position: absolute;
+          bottom: 80px;
+          left: 100px;
+          line-height: 35px;
+          font-size: 1.7em;
+        "
+      >
+        <p>
+          <strong>Most children are deficient in EPA and DHA,</strong> the
+          omega-3 essential fatty acids in fish oil.
+        </p>
+        <p>
+          These vital nutrients are
+          <strong>crucial building blocks of child development</strong>
+        </p>
+        <p>
+          and play key roles in every aspect of health,
+          <strong>including brain and eye function.</strong>
+        </p>
+      </div>
+
+      <a href="./menu.html">
+        <div
+          style="
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            position: absolute;
+            bottom: 230px;
+            right: 240px;
+          "
+        ></div>
+      </a>
+      <div
+        style="
+          font-family: Arial, Helvetica, sans-serif;
+          position: absolute;
+          bottom: 80px;
+          right: 220px;
+          display: flex;
+          width: 200px;
+          flex-direction: column;
+          align-items: center;
+        "
+      >
+        <h4><span>Si</span>mega<sup>3</sup></h4>
+        <p style="font-size: 1.6em; white-space: nowrap; text-align: center">
+          Omega 3 en cápsulas
+        </p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="hammerController.js"></script>
+    <script>
+      $(document).ready(function () {
+        setTimeout(footAnim, 2000);
+        changeScreen();
+      });
+
+      const footAnim = () => {
+        $(".footer").animate(
+          {
+            bottom: 0,
+          },
+          1000
+        );
+      };
+    </script>
+  </body>
+</html>

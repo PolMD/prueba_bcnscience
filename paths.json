@@ -1,0 +1,12 @@
+{
+    "/portada.html": {
+        "left" : "/menu.html"
+    },
+    "/menu.html": {
+        "left" : "/contacto.html",
+        "right": "/portada.html"
+    },
+    "/contacto.html": {
+        "right": "/menu.html"
+    }
+}
